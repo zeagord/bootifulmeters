@@ -1,0 +1,19 @@
+= Springboot Micrometer with Prometheus and Grafana
+
+== Full documentation
+
+Please refer the below blog post for the complete implementation and instructions
+
+== Environemnt
+* Springboot 2
+* Kotlin
+* H2
+* Micrometer
+* Prometheus
+* Grafana
+
+== Reference/Credits
+
+* I/O metrics are inspired by the Metrics published by Adrain Cole in the Zipkin project
+* Thanks to the Michael for publishing the Grafana dashboard for JVM metrics
+
