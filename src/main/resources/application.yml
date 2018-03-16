@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: bookstore
+  metrics:
+    prometheus:
+      enabled: true
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
