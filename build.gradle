@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.20'
+		kotlinVersion = '1.2.30'
 		springBootVersion = '2.0.0.RELEASE'
 	}
 	repositories {
@@ -13,7 +13,8 @@ buildscript {
 	}
 }
 
-apply plugin: 'kotlin'
+
+apply plugin: "kotlin"
 apply plugin: 'kotlin-spring'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -29,11 +30,13 @@ compileKotlin {
 	}
 }
 compileTestKotlin {
+
 	kotlinOptions {
 		freeCompilerArgs = ["-Xjsr305=strict"]
 		jvmTarget = "1.8"
 	}
 }
+
 
 repositories {
 	mavenCentral()
