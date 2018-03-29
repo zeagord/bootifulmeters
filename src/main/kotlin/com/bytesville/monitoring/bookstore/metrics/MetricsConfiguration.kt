@@ -8,23 +8,9 @@ import org.springframework.context.annotation.Configuration
 import java.util.concurrent.TimeUnit
 
 @Configuration
-class MetricsConfiguration(private var registry: MeterRegistry) {
+class MetricsConfiguration {
 
-  fun MetricsConfiguration(registry:MeterRegistry) {
-    this.registry = registry
-  }
-  @Bean fun cvmMemoryMetrics():ClassLoaderMetrics {
+  @Bean fun cvmMemoryMetrics(): ClassLoaderMetrics {
     return ClassLoaderMetrics()
   }
-
-  var timer: Timer = Timer.builder("my")
-      .description("custom timer")
-      .tags("custom", "function")
-      .register(registry)
-
-  var temp  = timer.record(
-      {
-        TimeUnit.MILLISECONDS.sleep(1500)
-      }
-  )
 }

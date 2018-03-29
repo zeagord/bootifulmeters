@@ -5,6 +5,12 @@ spring:
     prometheus:
       enabled: true
 
+  sleuth:
+    sampler:
+      percentage: 0.1 #(10% of the requests will be sampled)
+  zipkin:
+    baseUrl: http://localhost:9411/
+
 server:
   port: 9090
 
