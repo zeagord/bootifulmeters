@@ -26,6 +26,6 @@ class StoreRoute(private val bookHandler: BookHandler) {
       ServerResponse.ok().body(ip, String::class.java)
     })
     POST("/book", {bookHandler.saveBooks(it)})
-    GET("/book", {bookHandler.listBooks(it)})
+    GET("/books", {bookHandler.listBooks(it)})
   }
 }
