@@ -29,3 +29,10 @@ class StoreRoute(private val bookHandler: BookHandler) {
     GET("/books", {bookHandler.listBooks(it)})
   }
 }
+
+/*
+curl -X POST \
+  http://localhost:9080/book \
+  -H 'content-type: application/json' \
+  -d '[{"title":"Patterns of Enterprise Architecture","author":"Martin Fowler"},{"title":"Building Microservices","author":"Sam Newman"}]'
+ */
