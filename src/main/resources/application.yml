@@ -12,7 +12,7 @@ spring:
     baseUrl: http://localhost:9411/
 
 server:
-  port: 9090
+  port: 9080
 
 management:
   security:
