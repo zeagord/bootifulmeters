@@ -6,8 +6,5 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 class MetricsConfiguration {
-
-  @Bean fun cvmMemoryMetrics(): ClassLoaderMetrics {
-    return ClassLoaderMetrics()
-  }
+  @Bean fun cvmMemoryMetrics() = ClassLoaderMetrics()
 }
