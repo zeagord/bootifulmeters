@@ -6,6 +6,6 @@ scrape_configs:
   - job_name: 'bookstore'
     metrics_path: '/actuator/prometheus'
     static_configs:
-    - targets: ['172.23.249.36:9080'] #Provide your ip and Do not give localhost as we are running the prometheus in docker
+    - targets: ['localhost:9080'] #Provide your ip and Do not give localhost as we are running the prometheus in docker
       labels:
         application: bookstore-service

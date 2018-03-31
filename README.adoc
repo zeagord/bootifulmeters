@@ -4,6 +4,8 @@
 
 Please refer the below blog post for the complete implementation and instructions
 
+http://www.bytesville.com/springboot-micrometer-prometheus-grafana/
+
 == Environemnt
 * Springboot 2
 * Kotlin
@@ -14,6 +16,6 @@ Please refer the below blog post for the complete implementation and instruction
 
 == Reference/Credits
 
-* I/O metrics are inspired by the Metrics published by Adrain Cole in the Zipkin project
+* Throughput metrics are inspired by the Metrics published by Adrain Cole for the Zipkin project
 * Thanks to the Michael for publishing the Grafana dashboard for JVM metrics
 

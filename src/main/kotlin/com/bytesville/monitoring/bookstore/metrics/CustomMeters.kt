@@ -18,13 +18,13 @@ class CustomMeters(private var registry: MeterRegistry) {
   }
 
   var timer: Timer = Timer.builder("my")
-      .description("custom timer")
-      .tags("custom", "function")
+      .description("custom function timer")
+      .tags("custom", "timer")
       .register(registry)
 
   var temp = timer.record(
       {
-        log.info("Time sleep ")
+        log.info("Time to do some costly operation and sleep")
         TimeUnit.MILLISECONDS.sleep(1500)
       }
   )

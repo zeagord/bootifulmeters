@@ -25,10 +25,6 @@ management:
   metrics:
     distribution:
       percentiles-histogram:
-        http:
-          server:
-            requests: true
+        http.server.requests: true
       sla:
-        http:
-          server:
-            requests: 50ms
+        http.server.requests: 50ms
