@@ -57,7 +57,7 @@ dependencies {
   compile("org.jetbrains.kotlin:kotlin-reflect")
   compile('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
   runtime('javax.xml.bind:jaxb-api')
-  compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
+  compile 'io.micrometer:micrometer-registry-prometheus:1.5.1'
   compileOnly('org.projectlombok:lombok')
   testCompile('org.springframework.boot:spring-boot-starter-test')
   testCompile('io.projectreactor:reactor-test')
